@@ -1,0 +1,3 @@
+include LICENSE README.md setup.py requirements.txt
+recursive-include rimage *
+recursive-include tests *
