@@ -121,7 +121,7 @@ class ResourceWithImage(object):
 
 
 def add_to_s3 ( name, contents, content_type="image/jpg"):
-    bucket_name = config["S3_BUCKET_NAME"]
+    bucket_name = config["S3_IMAGES_BUCKET_NAME"]
     path_prefix = config.get("S3_IMAGES_PATH_PREFIX", "")
     conn = S3Connection(config["AWS_KEY"], config["AWS_SECRET"])
 
